@@ -48,7 +48,6 @@ abstract class BaseDialogFragment<B : ViewBinding, VM : BaseViewModel> : DialogF
     super.dismiss()
   }
 
-
   private fun setAnimation() {
     animation?.let {
       dialog?.window?.attributes?.windowAnimations = it.style

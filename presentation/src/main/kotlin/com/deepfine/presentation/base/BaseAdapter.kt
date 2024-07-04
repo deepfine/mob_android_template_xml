@@ -38,7 +38,7 @@ abstract class BaseAdapter<T, H : RecyclerView.ViewHolder> : RecyclerView.Adapte
     holder.itemView.setOnDebounceClickListener {
       runCatching {
         onItemClickListener?.onItemClick(
-          itemList?.get(holder.adapterPosition)
+          itemList?.get(holder.adapterPosition),
         )
       }
     }

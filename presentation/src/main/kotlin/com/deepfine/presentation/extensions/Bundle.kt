@@ -20,4 +20,3 @@ fun <T : Serializable> Bundle.parseSerializable(key: String, clazz: Class<T>): T
     @Suppress("UNCHECKED_CAST", "DEPRECATION")
     getSerializable(key) as T
   }
-

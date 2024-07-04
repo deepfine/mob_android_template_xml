@@ -53,7 +53,6 @@ abstract class BaseBottomSheetDialogFragment<B : ViewBinding, VM : BaseViewModel
   protected abstract fun onBind()
   protected abstract fun initView()
 
-
   private fun setAnimation() {
     animation?.let {
       dialog?.window?.attributes?.windowAnimations = it.style
