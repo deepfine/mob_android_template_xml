@@ -6,9 +6,9 @@ targetSdk = "34"
 compileSdk = "34"
 versionCode = "1"
 versionName = "1.0.0"
-kotlin = "2.0.10"
-kotlinSerialization = "1.7.1"
-ksp = "2.0.10-1.0.24"
+kotlin = "2.0.20"
+kotlinSerialization = "1.7.2"
+ksp = "2.0.20-1.0.25"
 agp = "8.6.0"
 
 
