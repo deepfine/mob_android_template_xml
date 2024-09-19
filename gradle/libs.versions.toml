@@ -14,7 +14,7 @@ agp = "8.6.1"
 
 multidex = "2.0.1"
 coreKtx = "1.13.1"
-coroutine = "1.8.1"
+coroutine = "1.9.0"
 ktor = "2.3.12"
 sandwich = "2.0.9"
 hilt = "2.52"
