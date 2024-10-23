@@ -8,7 +8,7 @@ versionCode = "1"
 versionName = "1.0.0"
 kotlin = "2.0.21"
 kotlinSerialization = "1.7.3"
-ksp = "2.0.21-1.0.25"
+ksp = "2.0.21-1.0.26"
 agp = "8.7.1"
 
 
