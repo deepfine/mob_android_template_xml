@@ -3,7 +3,7 @@
 <details>
     <summary><b>Environment Setup</b></summary>
       <ol>
-        <li>Android Studio Koala</li>
+        <li>Android Studio Ladybug</li>
         <li>Java version 17</li>
       </ol>
 </details>
