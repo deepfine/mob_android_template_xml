@@ -9,7 +9,7 @@ versionName = "1.0.0"
 kotlin = "2.1.0"
 kotlinSerialization = "1.7.3"
 ksp = "2.1.0-1.0.29"
-agp = "8.7.2"
+agp = "8.7.3"
 
 
 multidex = "2.0.1"
