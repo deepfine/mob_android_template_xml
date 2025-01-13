@@ -30,10 +30,8 @@ abstract class BaseBottomSheetDialogFragment<B : ViewBinding, VM : BaseViewModel
     }
   }
 
-  override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-    return BottomSheetDialog(requireContext(), R.style.CustomBottomSheetDialogFragment).apply {
-      setCanceledOnTouchOutside(true)
-    }
+  override fun onCreateDialog(savedInstanceState: Bundle?): Dialog = BottomSheetDialog(requireContext(), R.style.CustomBottomSheetDialogFragment).apply {
+    setCanceledOnTouchOutside(true)
   }
 
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

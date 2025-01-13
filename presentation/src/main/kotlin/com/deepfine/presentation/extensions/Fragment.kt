@@ -12,9 +12,7 @@ fun Fragment.showToast(resId: Int) {
   showToast(getString(resId))
 }
 
-fun Fragment.weakFragment(): Fragment? {
-  return WeakReference(this).get()
-}
+fun Fragment.weakFragment(): Fragment? = WeakReference(this).get()
 
 fun Fragment.transactionReplace(layoutId: Int, fragment: Fragment) {
   childFragmentManager.beginTransaction().replace(layoutId, fragment).commit()

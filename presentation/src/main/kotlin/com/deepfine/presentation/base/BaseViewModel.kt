@@ -11,7 +11,9 @@ import kotlinx.coroutines.launch
 
 interface BaseViewModel
 
-abstract class BaseViewModelImpl : ViewModel(), BaseViewModel {
+abstract class BaseViewModelImpl :
+  ViewModel(),
+  BaseViewModel {
   protected fun <T> FlowCollector<T>.emitOn(value: T) {
     viewModelScope.launch {
       this@emitOn.emit(value)
