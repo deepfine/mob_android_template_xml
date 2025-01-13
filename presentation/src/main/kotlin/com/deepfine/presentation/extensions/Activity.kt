@@ -6,9 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import java.lang.ref.WeakReference
 
-internal fun Activity.weakActivity(): Activity? {
-  return WeakReference(this).get()
-}
+internal fun Activity.weakActivity(): Activity? = WeakReference(this).get()
 
 fun Activity.showToast(resId: Int) {
   showToast(getString(resId))

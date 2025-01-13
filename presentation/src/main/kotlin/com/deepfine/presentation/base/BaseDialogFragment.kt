@@ -27,11 +27,9 @@ abstract class BaseDialogFragment<B : ViewBinding, VM : BaseViewModel> : DialogF
     return binding.root
   }
 
-  override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-    return object : Dialog(requireContext(), theme) {
-      override fun onBackPressed() {
-        onBackPressedDialog()
-      }
+  override fun onCreateDialog(savedInstanceState: Bundle?): Dialog = object : Dialog(requireContext(), theme) {
+    override fun onBackPressed() {
+      onBackPressedDialog()
     }
   }
 
