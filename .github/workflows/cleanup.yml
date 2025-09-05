@@ -17,6 +17,7 @@ jobs:
           rm -f .github/Project_structure.pptx
           rm -f .github/renovate.json
           rm -f .github/workflows/build.yaml
+          : > README.md
 
       - name: Commit changes (remove unwanted files)
         run: |
@@ -26,7 +27,8 @@ jobs:
           git rm -f .github/Project_structure.pptx || true
           git rm -f .github/renovate.json || true
           git rm -f .github/workflows/build.yaml || true
-
+          git add README.md || true
+          
           git commit -m "chore: remove template-only files" || echo "No changes to commit"
           git push
 
