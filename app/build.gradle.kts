@@ -55,7 +55,6 @@ android {
       isMinifyEnabled = false
       isShrinkResources = false
       splits.abi.isEnable = false
-      splits.density.isEnable = false
       aaptOptions.cruncherEnabled = false
     }
 
