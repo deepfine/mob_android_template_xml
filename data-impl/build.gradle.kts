@@ -9,8 +9,9 @@ android {
 }
 
 dependencies {
-  implementation(project(":data-api"))
-  implementation(project(":data-api:network-api"))
-  runtimeOnly(project(":data-impl:network-impl"))
+  implementation(projects.dataApi)
+  implementation(projects.dataApi.networkApi)
+  runtimeOnly(projects.dataImpl.networkImpl)
+
   implementation(libs.kotlin.serialization)
 }

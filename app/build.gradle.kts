@@ -74,8 +74,9 @@ android {
 }
 
 dependencies {
-  implementation(project(":buildconfig"))
-  implementation(project(":presentation:main"))
+  implementation(projects.buildconfig)
+  implementation(projects.presentation.main)
+
   implementation(libs.androidx.core.ktx)
   implementation(libs.androidx.multidex)
   implementation(libs.hilt)
