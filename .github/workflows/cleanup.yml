@@ -7,7 +7,7 @@ on:
 jobs:
   remove-files:
     if: github.repository != 'deepfine/mob_android_template_xml'
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
